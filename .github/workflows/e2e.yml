@@ -3,7 +3,7 @@ on:
   push:
     branches: ["main"]
 jobs:
-  test:
+  e2e_proof_job:
     runs-on: ubuntu-latest
     steps:
       - run: echo "E2E Proof execution at $(date)"
