@@ -1,0 +1,10 @@
+name: E2E Test
+on:
+  repository_dispatch:
+    types: [horseci-test]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello from HorseCI"
+      - run: echo "Another step"
