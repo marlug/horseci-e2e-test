@@ -1,7 +1,7 @@
 name: E2E Test
 on:
-  repository_dispatch:
-    types: [horseci-test]
+  push:
+    branches: ["main"]
 jobs:
   test:
     runs-on: ubuntu-latest
