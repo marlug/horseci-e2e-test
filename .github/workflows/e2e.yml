@@ -2,6 +2,7 @@ name: App Proof
 on:
   push:
     branches: ["main"]
+  pull_request:
 jobs:
   e2e_proof_job:
     runs-on: ubuntu-latest
